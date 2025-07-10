@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "name": "crossbow",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Crossbow_jsin87.png"
+    },
+    {
+        "id": 2,
+        "name": "hoe",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Diamond_Hoe_bmatqq.png"
+    },
+    {
+        "id": 3,
+        "name": "sword",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140165/Diamond_Sword_ztwhwr.png"
+    },
+    {
+        "id": 4,
+        "name": "pickaxe",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140165/Diamond_Pickaxe_lpeujm.png"
+    },
+    {
+        "id": 5,
+        "name": "shovel",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Diamond_Shovel_jqnxvu.png"
+    },
+    {
+        "id": 6,
+        "name": "book",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png"
+    },
+
+    {
+        "id": 7,
+        "name": "elytra",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Elytra_l7xnjq.png"
+    },
+
+    {
+        "id": 8,
+        "name": "fishing rod",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Fishing_Rod_ryexs7.png"
+    },
+
+    {
+        "id": 9,
+        "name": "flint and steel",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Flint_And_Steel_hegm72.png"
+    },
+    {
+        "id": 10,
+        "name": "mace",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Mace_a3uzdd.png"
+    },
+    {
+        "id": 11,
+        "name": "helmet",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Diamond_Helmet_q0euic.png"
+    },
+
+    {
+        "id": 12,
+        "name": "leggings",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Leggings_aklenn.png"
+    },
+
+    {
+        "id": 13,
+        "name": "trident",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Trident_dggcfy.png"
+    },
+
+    {
+        "id": 14,
+        "name": "chestplate",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Chestplate_ws3mk6.png"
+    },
+
+    {
+        "id": 15,
+        "name": "shoes",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Boots_tdemru.png"
+    },
+
+    {
+        "id": 16,
+        "name": "shield",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Shield_cbwkez.png"
+    },
+
+    {
+        "id": 17,
+        "name": "carved pumpkin",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Carved_Pumpkin_imfkyt.png"
+    },
+
+    {
+        "id": 18,
+        "name": "brush",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Brush_hpmf4c.png"
+    },
+
+    {
+        "id": 19,
+        "name": "shears",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Shears_ldd6w7.png"
+    }
+]
