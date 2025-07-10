@@ -26,10 +26,9 @@
     },
     {
         "id": 6,
-        "name": "book",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png"
+        "name": "brush",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Brush_hpmf4c.png"
     },
-
     {
         "id": 7,
         "name": "elytra",
@@ -97,5 +96,10 @@
         "id": 18,
         "name": "shears",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Shears_ldd6w7.png"
+    },
+    {
+        "id": 19,
+        "name": "book",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png"
     }
 ]
