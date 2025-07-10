@@ -44,7 +44,7 @@
 
     {
         "id": 9,
-        "name": "flint and steel",
+        "name": "flint & steel",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Flint_And_Steel_hegm72.png"
     },
     {
@@ -93,15 +93,8 @@
         "name": "carved pumpkin",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Carved_Pumpkin_imfkyt.png"
     },
-
     {
         "id": 18,
-        "name": "brush",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Brush_hpmf4c.png"
-    },
-
-    {
-        "id": 19,
         "name": "shears",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140162/Shears_ldd6w7.png"
     }

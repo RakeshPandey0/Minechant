@@ -1,10 +1,11 @@
 import Title from "./_components/Title/page";
-import Item from "./_components/Item/page";
+import Container from "./_components/Container/page";
+
 export default function Home() {
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center gap-4 bg-[#292524] min-h-screen">
             <Title />
-            <Item />
+            <Container />
         </div>
     );
 }
