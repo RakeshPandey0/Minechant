@@ -25,14 +25,12 @@ const Page = ({ name, level, image }) => {
     // const isSelected =
 
     return (
-        <div
-            className="flex flex-col justify-center items-center cursor-pointer"
-            onClick={() => handleClick({ name })}
-        >
+        <div className="flex flex-col justify-center items-center">
             {name !== "book" && (
                 <>
                     <div
-                        className={`flex flex-wrap justify-center items-center w-30 h-30 m-1 bg-[${color}] border-2 rounded-xl hover:${
+                        onClick={() => handleClick({ name })}
+                        className={`flex flex-wrap cursor-pointer justify-center items-center w-30 h-30 m-1 bg-[${color}] border-2 rounded-xl hover:${
                             isSelected ? `bg-[${color}]` : "bg-blue-950"
                         } transition-all duration-300 ease-in-out`}
                     >
