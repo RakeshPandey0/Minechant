@@ -5,7 +5,7 @@ import items from "../../assets/items.json";
 
 const page = () => {
     return (
-        <div className="flex flex-col w-[70%] bg-[#44403C] border-2 rounded-md shadow-lg shadow-gray-500/50 p-4 my-4 mx-auto">
+        <div className="flex flex-col w-[70%] bg-[#31302f] border-2 rounded-md shadow-lg shadow-gray-500/50 p-4 my-4 mx-auto">
             <span className="text-3xl text-gray-300 mx-10 my-4">
                 Select an Item to Enchant
             </span>

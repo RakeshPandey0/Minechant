@@ -37,13 +37,13 @@
 
     {
         "id": 8,
-        "name": "fishing rod",
+        "name": "fishing_rod",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Fishing_Rod_ryexs7.png"
     },
 
     {
         "id": 9,
-        "name": "flint & steel",
+        "name": "flint_&_steel",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Flint_And_Steel_hegm72.png"
     },
     {
@@ -89,7 +89,7 @@
 
     {
         "id": 17,
-        "name": "carved pumpkin",
+        "name": "carved_pumpkin",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Carved_Pumpkin_imfkyt.png"
     },
     {

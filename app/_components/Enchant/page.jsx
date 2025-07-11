@@ -3,10 +3,10 @@ import React from "react";
 
 const Page = ({ name, level, image }) => {
     return (
-        <div className="flex flex-col justify-center items-center cursor-pointer">
+        <div className="flex flex-col justify-center items-center">
             {name !== "book" && (
                 <>
-                    <div className="flex flex-wrap justify-center items-center w-30 h-30 m-1 bg-[#1C4464] border-2 rounded-xl hover:bg-blue-950 transition-all duration-300 ease-in-out">
+                    <div className="group/Item-box flex flex-wrap justify-center items-center w-30 h-30 m-1 bg-[#1C4464] border-2 rounded-xl">
                         <div className="relative">
                             <Image
                                 width={80}
@@ -24,10 +24,7 @@ const Page = ({ name, level, image }) => {
                         </div>
                     </div>
 
-                    <div
-                        className="text-gray-400 text-2xl capitalize mx-auto rounded px-2 max-w-[80%] text-center h-20 flex items-start justify-center"
-                        style={{ lineHeight: "1.1" }}
-                    >
+                    <div className="text-gray-400 text-2xl capitalize min-h-10 mx-auto rounded px-2 max-w-full text-center">
                         {name.replaceAll("_", " ")}
                     </div>
                 </>
