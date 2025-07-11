@@ -1,12 +1,41 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { selectItem, selectEnchant } from "../../redux/selectionSlice";
 
 const Page = ({ name, level, image }) => {
+    const [color, setColor] = useState("#1C4464");
+
+    const dispatch = useDispatch();
+    const { selected_items, selected_enchants } = useSelector(
+        (state) => state.selection
+    );
+
+    // determine if the item is selected
+    const handleClick = ({ name }) => {
+        dispatch(selectItem(name));
+        setColor("#305c4c");
+        console.log(isSelected);
+    };
+
+    const isSelected = selected_items.includes(name);
+
+    // const isSelected =
+
     return (
-        <div className="flex flex-col justify-center items-center cursor-pointer">
+        <div
+            className="flex flex-col justify-center items-center cursor-pointer"
+            onClick={() => handleClick({ name })}
+        >
             {name !== "book" && (
                 <>
-                    <div className="flex flex-wrap justify-center items-center w-30 h-30 m-1 bg-[#1C4464] border-2 rounded-xl hover:bg-blue-950 transition-all duration-300 ease-in-out">
+                    <div
+                        className={`flex flex-wrap justify-center items-center w-30 h-30 m-1 bg-[${color}] border-2 rounded-xl hover:${
+                            isSelected ? `bg-[${color}]` : "bg-blue-950"
+                        } transition-all duration-300 ease-in-out`}
+                    >
                         <div className="relative">
                             <Image
                                 width={80}
