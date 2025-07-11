@@ -18,7 +18,7 @@ const page = () => {
             </span>
             <div className="flex flex-col gap-y-6">
                 {items.map((item) => {
-                    const maxLevel = parseInt(item.levelMax, 10);
+                    const maxLevel = item.levelMax;
                     return (
                         <div
                             key={item.name}

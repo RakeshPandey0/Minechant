@@ -1,8 +1,8 @@
 [
     {
         "name": "protection",
-        "levelMax": "4",
-        "weight": "1",
+        "levelMax": 4,
+        "weight": 1,
         "incompatible": [
             "blast_protection",
             "fire_protection",
@@ -12,22 +12,22 @@
     },
     {
         "name": "aqua_affinity",
-        "levelMax": "1",
-        "weight": "2",
+        "levelMax": 1,
+        "weight": 2,
         "incompatible": [],
         "items": ["helmet", "turtle_shell"]
     },
     {
         "name": "bane_of_arthropods",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": ["smite", "sharpness", "density", "breach"],
         "items": ["sword", "axe", "mace"]
     },
     {
         "name": "blast_protection",
-        "levelMax": "4",
-        "weight": "2",
+        "levelMax": 4,
+        "weight": 2,
         "incompatible": [
             "fire_protection",
             "protection",
@@ -37,43 +37,43 @@
     },
     {
         "name": "channeling",
-        "levelMax": "1",
-        "weight": "4",
+        "levelMax": 1,
+        "weight": 4,
         "incompatible": ["riptide"],
         "items": ["trident"]
     },
     {
         "name": "depth_strider",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": ["frost_walker"],
         "items": ["boots"]
     },
     {
         "name": "efficiency",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": [],
         "items": ["pickaxe", "shovel", "axe", "hoe", "shears"]
     },
     {
         "name": "feather_falling",
-        "levelMax": "4",
-        "weight": "1",
+        "levelMax": 4,
+        "weight": 1,
         "incompatible": [],
         "items": ["boots"]
     },
     {
         "name": "fire_aspect",
-        "levelMax": "2",
-        "weight": "2",
+        "levelMax": 2,
+        "weight": 2,
         "incompatible": [],
         "items": ["sword", "mace"]
     },
     {
         "name": "fire_protection",
-        "levelMax": "4",
-        "weight": "1",
+        "levelMax": 4,
+        "weight": 1,
         "incompatible": [
             "blast_protection",
             "protection",
@@ -83,78 +83,78 @@
     },
     {
         "name": "flame",
-        "levelMax": "1",
-        "weight": "2",
+        "levelMax": 1,
+        "weight": 2,
         "incompatible": [],
         "items": ["bow"]
     },
     {
         "name": "fortune",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": ["silk_touch"],
         "items": ["pickaxe", "shovel", "axe", "hoe"]
     },
     {
         "name": "frost_walker",
-        "levelMax": "2",
-        "weight": "2",
+        "levelMax": 2,
+        "weight": 2,
         "incompatible": ["depth_strider"],
         "items": ["boots"]
     },
     {
         "name": "impaling",
-        "levelMax": "5",
-        "weight": "2",
+        "levelMax": 5,
+        "weight": 2,
         "incompatible": [],
         "items": ["trident"]
     },
     {
         "name": "infinity",
-        "levelMax": "1",
-        "weight": "4",
+        "levelMax": 1,
+        "weight": 4,
         "incompatible": ["mending"],
         "items": ["bow"]
     },
     {
         "name": "knockback",
-        "levelMax": "2",
-        "weight": "1",
+        "levelMax": 2,
+        "weight": 1,
         "incompatible": [],
         "items": ["sword"]
     },
     {
         "name": "looting",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["sword"]
     },
     {
         "name": "loyalty",
-        "levelMax": "3",
-        "weight": "1",
+        "levelMax": 3,
+        "weight": 1,
         "incompatible": ["riptide"],
         "items": ["trident"]
     },
     {
         "name": "luck_of_the_sea",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["fishing_rod"]
     },
     {
         "name": "lure",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["fishing_rod"]
     },
     {
         "name": "mending",
-        "levelMax": "1",
-        "weight": "2",
+        "levelMax": 1,
+        "weight": 2,
         "incompatible": ["infinity"],
         "items": [
             "helmet",
@@ -183,78 +183,78 @@
     },
     {
         "name": "multishot",
-        "levelMax": "1",
-        "weight": "2",
+        "levelMax": 1,
+        "weight": 2,
         "incompatible": ["piercing"],
         "items": ["crossbow"]
     },
     {
         "name": "piercing",
-        "levelMax": "4",
-        "weight": "1",
+        "levelMax": 4,
+        "weight": 1,
         "incompatible": ["multishot"],
         "items": ["crossbow"]
     },
     {
         "name": "power",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": [],
         "items": ["bow"]
     },
     {
         "name": "projectile_protection",
-        "levelMax": "4",
-        "weight": "1",
+        "levelMax": 4,
+        "weight": 1,
         "incompatible": ["protection", "blast_protection", "fire_protection"],
         "items": ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
     },
     {
         "name": "punch",
-        "levelMax": "2",
-        "weight": "2",
+        "levelMax": 2,
+        "weight": 2,
         "incompatible": [],
         "items": ["bow"]
     },
     {
         "name": "quick_charge",
-        "levelMax": "3",
-        "weight": "1",
+        "levelMax": 3,
+        "weight": 1,
         "incompatible": [],
         "items": ["crossbow"]
     },
     {
         "name": "respiration",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["helmet", "turtle_shell"]
     },
     {
         "name": "riptide",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": ["channeling", "loyalty"],
         "items": ["trident"]
     },
     {
         "name": "sharpness",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": ["bane_of_arthropods", "smite"],
         "items": ["sword", "axe"]
     },
     {
         "name": "silk_touch",
-        "levelMax": "1",
-        "weight": "4",
+        "levelMax": 1,
+        "weight": 4,
         "incompatible": ["fortune"],
         "items": ["pickaxe", "shovel", "axe", "hoe"]
     },
     {
         "name": "smite",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": [
             "bane_of_arthropods",
             "sharpness",
@@ -265,36 +265,36 @@
     },
     {
         "name": "soul_speed",
-        "levelMax": "3",
-        "weight": "4",
+        "levelMax": 3,
+        "weight": 4,
         "incompatible": [],
         "items": ["boots"]
     },
     {
         "name": "sweeping",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["sword"]
     },
     {
         "name": "swift_sneak",
-        "levelMax": "3",
-        "weight": "4",
+        "levelMax": 3,
+        "weight": 4,
         "incompatible": [],
         "items": ["leggings"]
     },
     {
         "name": "thorns",
-        "levelMax": "3",
-        "weight": "4",
+        "levelMax": 3,
+        "weight": 4,
         "incompatible": [],
         "items": ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
     },
     {
         "name": "unbreaking",
-        "levelMax": "3",
-        "weight": "1",
+        "levelMax": 3,
+        "weight": 1,
         "incompatible": [],
         "items": [
             "helmet",
@@ -323,8 +323,8 @@
     },
     {
         "name": "binding_curse",
-        "levelMax": "1",
-        "weight": "4",
+        "levelMax": 1,
+        "weight": 4,
         "incompatible": [],
         "items": [
             "helmet",
@@ -338,8 +338,8 @@
     },
     {
         "name": "vanishing_curse",
-        "levelMax": "1",
-        "weight": "4",
+        "levelMax": 1,
+        "weight": 4,
         "incompatible": [],
         "items": [
             "helmet",
@@ -369,22 +369,22 @@
     },
     {
         "name": "density",
-        "levelMax": "5",
-        "weight": "1",
+        "levelMax": 5,
+        "weight": 1,
         "incompatible": ["breach", "smite", "bane_of_arthropods"],
         "items": ["mace"]
     },
     {
         "name": "breach",
-        "levelMax": "4",
-        "weight": "2",
+        "levelMax": 4,
+        "weight": 2,
         "incompatible": ["density", "smite", "bane_of_arthropods"],
         "items": ["mace"]
     },
     {
         "name": "wind_burst",
-        "levelMax": "3",
-        "weight": "2",
+        "levelMax": 3,
+        "weight": 2,
         "incompatible": [],
         "items": ["mace"]
     }

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "crossbow",
-        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Crossbow_jsin87.png"
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215191/Crossbow_dhxtde.png"
     },
     {
         "id": 2,
@@ -99,6 +99,16 @@
     },
     {
         "id": 19,
+        "name": "bow",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215191/Bow_qbp1wk.png"
+    },
+    {
+        "id": 20,
+        "name": "turtle_helmet",
+        "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215218/Turtle_Helmet_gqhqri.png"
+    },
+    {
+        "id": 21,
         "name": "book",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png"
     }

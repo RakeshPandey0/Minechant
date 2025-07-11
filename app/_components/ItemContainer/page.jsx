@@ -9,7 +9,7 @@ const page = () => {
             <span className="text-3xl text-gray-300 mx-10 my-4">
                 Select an Item to Enchant
             </span>
-            <div className="grid grid-cols-6 justify-center items-center gap-y-6">
+            <div className="grid grid-cols-5 gap-y-6">
                 {items.map((item) => (
                     <Item key={item.id} name={item.name} image={item.src} />
                 ))}

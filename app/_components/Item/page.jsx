@@ -25,7 +25,7 @@ const Page = ({ name, level, image }) => {
                     </div>
 
                     <div
-                        className="text-gray-400 text-2xl capitalize mx-auto rounded px-2 max-w-[80%] text-center h-20 flex items-start justify-center"
+                        className="text-gray-400 text-2xl capitalize mx-auto rounded px-2 max-w-[80%] text-center h-13 flex items-start justify-center"
                         style={{ lineHeight: "1.1" }}
                     >
                         {name.replaceAll("_", " ")}
