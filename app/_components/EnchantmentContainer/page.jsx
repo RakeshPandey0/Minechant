@@ -1,6 +1,7 @@
 import React from "react";
 import Item from "../Item/page";
 import items from "../../assets/enchants.json";
+import Enchant from "../Enchant/page"
 
 const toRoman = (num) => {
     const roman = ["I", "II", "III", "IV", "V"];
@@ -25,7 +26,7 @@ const page = () => {
                             className="grid grid-cols-5 content-center gap-x-8"
                         >
                             {Array.from({ length: maxLevel }, (_, i) => (
-                                <Item
+                                <Enchant
                                     key={`${item.name}_${i}`}
                                     name={`${item.name} ${
                                         item.levelMax > "1" ? toRoman(i) : ""
