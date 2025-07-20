@@ -10,21 +10,49 @@ const selectionSlice = createSlice({
   initialState,
   reducers: {
     selectItem: (state, action) => {
-      state.selected_items = [action.payload];
+      return {
+        ...state,
+        selected_items: [action.payload],
+      };
     },
     selectEnchant: (state, action) => {
       const { rowIndex, name } = action.payload;
-      state.selected_enchants[rowIndex] = name;
+      const updatedEnchants = [...state.selected_enchants];
+      updatedEnchants[rowIndex] = name;
+      return {
+        ...state,
+        selected_enchants: updatedEnchants,
+      };
     },
-    removeItem: (state, action) => {
-      state.selected_items = [];
+    removeItem: (state) => {
+      return {
+        ...state,
+        selected_items: [],
+      };
     },
     removeEnchant: (state, action) => {
-      state.selected_enchants[action.payload] = null;
+      const updatedEnchants = [...state.selected_enchants];
+      updatedEnchants[action.payload] = null;
+      return {
+        ...state,
+        selected_enchants: updatedEnchants,
+      };
+    },
+
+    clearEnchant: (state) => {
+      return {
+        ...state,
+        selected_enchants: [],
+      };
     },
   },
 });
 
-export const { selectItem, selectEnchant, removeItem, removeEnchant } =
-  selectionSlice.actions;
+export const {
+  selectItem,
+  selectEnchant,
+  removeItem,
+  removeEnchant,
+  clearEnchant,
+} = selectionSlice.actions;
 export default selectionSlice.reducer;
