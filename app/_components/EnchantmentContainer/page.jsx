@@ -1,6 +1,7 @@
 import React from "react";
-import items from "../../assets/enchants.json";
+import enchantments from "../../assets/enchants.json";
 import Enchant from "../Enchant/page";
+import { useSelector } from "react-redux";
 
 const toRoman = (num) => {
   const roman = ["I", "II", "III", "IV", "V"];
@@ -8,6 +9,7 @@ const toRoman = (num) => {
 };
 
 const page = () => {
+  const { selected_items } = useSelector((state) => state.selection);
   const book_src =
     "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png";
 
@@ -17,25 +19,31 @@ const page = () => {
         Select Books for Enchantment
       </span>
       <div className="flex flex-col gap-y-6">
-        {items.map((item, index) => {
-          const maxLevel = item.levelMax;
-          return (
-            <div
-              key={item.name}
-              className="grid grid-cols-5 content-center gap-x-8"
-            >
-              {Array.from({ length: maxLevel }, (_, i) => (
-                <Enchant
-                  key={`${item.name}_${i}`}
-                  name={`${item.name} ${item.levelMax > "1" ? toRoman(i) : ""}`}
-                  level={item.levelMax > "1" ? toRoman(i) : ""}
-                  image={book_src}
-                  rowIndex = {index}
-                />
-              ))}
-            </div>
-          );
-        })}
+        {enchantments
+          .filter((enchantment) =>
+            enchantment.items.includes(selected_items[0])
+          )
+          .map((enchantment, index) => {
+            const maxLevel = enchantment.levelMax;
+            return (
+              <div
+                key={enchantment.name}
+                className="grid grid-cols-5 content-center gap-x-8"
+              >
+                {Array.from({ length: maxLevel }, (_, i) => (
+                  <Enchant
+                    key={`${enchantment.name}_${i}`}
+                    name={`${enchantment.name} ${
+                      enchantment.levelMax > "1" ? toRoman(i) : ""
+                    }`}
+                    level={enchantment.levelMax > "1" ? toRoman(i) : ""}
+                    image={book_src}
+                    rowIndex={index}
+                  />
+                ))}
+              </div>
+            );
+          })}
       </div>
     </div>
   );
