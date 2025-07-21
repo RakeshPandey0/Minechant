@@ -1,17 +1,31 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import enchantments from "@/app/assets/enchants.json";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectEnchant,
   removeEnchant,
 } from "../../redux/slices/selectionSlice";
 
-const Page = ({ name, level, image, rowIndex }) => {
+const Page = ({ name, level, image, rowIndex, incompatible }) => {
   const { selected_enchants } = useSelector((state) => state.selection);
   const dispatch = useDispatch();
-
-  const handleClick = ({ rowIndex, name }) => {
+  const handleClick = ({ rowIndex, name, incompatible }) => {
     if (selected_enchants[rowIndex] !== name) {
+      const enchantNameOnly = selected_enchants
+        .filter((enchant) => typeof enchant === "string")
+        .map((enchant) => enchant.split(" ")[0]);
+
+      const checkList = enchantNameOnly.filter((enchant) =>
+        incompatible.includes(enchant)
+      );
+
+      selected_enchants.forEach((enchant, index) => {
+        if (enchant && checkList.includes(enchant.split(" ")[0])) {
+          dispatch(removeEnchant(index));
+        }
+      });
+
       dispatch(selectEnchant({ rowIndex, name }));
     } else {
       dispatch(removeEnchant(rowIndex));
@@ -34,7 +48,7 @@ const Page = ({ name, level, image, rowIndex }) => {
                 height={80}
                 src={image}
                 alt={`${name} image here`}
-                onClick={() => handleClick({ rowIndex, name })}
+                onClick={() => handleClick({ rowIndex, name, incompatible })}
               />
               {level && (
                 <div className="absolute w-8 h-8 flex justify-center items-center -top-3 -right-2 bg-amber-300 rounded-full">

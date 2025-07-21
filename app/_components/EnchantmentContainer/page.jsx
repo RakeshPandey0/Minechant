@@ -14,6 +14,7 @@ const page = () => {
     "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140164/Enchanted_Book_yqp0ro.png";
 
   return (
+    selected_items[0] &&
     <div className="flex flex-col w-[70%] bg-[#31302f] border-2 rounded-md shadow-lg shadow-gray-500/50 p-4 my-4 mx-auto">
       <span className="text-3xl text-gray-300 mx-10 my-4">
         Select Books for Enchantment
@@ -39,6 +40,7 @@ const page = () => {
                     level={enchantment.levelMax > "1" ? toRoman(i) : ""}
                     image={book_src}
                     rowIndex={index}
+                    incompatible = {enchantment.incompatible}
                   />
                 ))}
               </div>
