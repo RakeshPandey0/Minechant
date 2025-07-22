@@ -322,7 +322,7 @@
         ]
     },
     {
-        "name": "binding_curse",
+        "name": "curse_of_binding",
         "levelMax": 1,
         "weight": 4,
         "incompatible": [],
@@ -332,12 +332,12 @@
             "leggings",
             "boots",
             "elytra",
-            "pumpkin",
+            "carved_pumpkin",
             "turtle_shell"
         ]
     },
     {
-        "name": "vanishing_curse",
+        "name": "curse_of_vanishing",
         "levelMax": 1,
         "weight": 4,
         "incompatible": [],
@@ -360,7 +360,7 @@
             "warped_fungus_on_a_stick",
             "shield",
             "elytra",
-            "pumpkin",
+            "carved_pumpkin",
             "trident",
             "turtle_shell",
             "crossbow",

@@ -77,7 +77,7 @@
 
     {
         "id": 15,
-        "name": "shoes",
+        "name": "boots",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752140163/Diamond_Boots_tdemru.png"
     },
 
@@ -104,7 +104,7 @@
     },
     {
         "id": 20,
-        "name": "turtle_helmet",
+        "name": "turtle_shell",
         "src": "https://res.cloudinary.com/dbmievfdc/image/upload/v1752215218/Turtle_Helmet_gqhqri.png"
     },
     {
