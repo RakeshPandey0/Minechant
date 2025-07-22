@@ -8,40 +8,98 @@ const groq = new Groq({
 
 export async function POST(request) {
   try {
-    const { selected_item, selected_enchants } = await request.json();
+    const { selected_items, selected_enchants } = await request.json();
+
+    if (!selected_items || !Array.isArray(selected_enchants)) {
+      return NextResponse.json(
+        { error: 'Invalid input format.' },
+        { status: 400 }
+      );
+    }
 
     const prompt = `
-      I want you to give me the best enchantment order for input in the format:
-      selected_item: [carved_pimpkin]
-      selected_enchants: [mending, unbreaking III, sharpness II],
+You are a Minecraft enchantment optimizer.
 
-      give me output as:
+Your job is to determine the optimal XP order for combining a base item and enchantment books using an anvil.
 
-      [
-          "Carved Pumpkin  + Sharpness III -> XP:2",
-          "Unbreaking III + Mending -> XP: 2",
-          "Carved Pumpkin + (Unbreaking + Mending) -> XP: 8",
-          "Total XP required: 12"
-      ]
-      the item and enchants are:
-      selected_item: ${selected_item}
-      selected_enchants: ${selected_enchants}
+🛠️ Rules:
+- Only two items can be combined at a time (e.g. Book + Book, or Item + Book).
+- Combine enchantment books first when possible.
+- Then combine books with the base item.
+- Prioritize the lowest total XP cost.
+- Do not check for enchantment compatibility — assume all can be combined.
+- Assume each enchantment is on its own enchanted book.
+- Use realistic Minecraft anvil XP costs and prior work penalty.
 
-      return answer in this specified list format only don't go beyond that.
-    `;
+📥 Input:
+selected_item: ${selected_items}
+selected_enchants: ${selected_enchants}
+
+📤 Output:
+Return ONLY a JSON array in this exact format:
+[
+  "Book1 + Book2 -> XP: 1",
+  "Book3 + (Book1 + Book2) -> XP: 2",
+  "Diamond Sword + (Book3 + Book1 + Book2) -> XP: 5",
+  "Total XP required: 8"
+]
+
+❌ Do NOT include any explanation, markdown, labels like “response:”, or any other text.
+✅ Only return the array. No extra words.
+✅ Follow Minecraft anvil rules: combine only two things at a time.
+
+`;
 
     const chatCompletion = await groq.chat.completions.create({
       messages: [{ role: 'user', content: prompt }],
       model: 'llama3-8b-8192',
     });
 
-    const content = chatCompletion.choices[0]?.message?.content;
+    let raw = chatCompletion.choices?.[0]?.message?.content?.trim();
 
-    return NextResponse.json({ result: content });
-  } catch (error) {
-    console.error('Error from Groq:', error);
+    if (!raw) {
+      throw new Error('Empty response from model.');
+    }
+
+    // ✂️ Clean up any unwanted characters or formatting
+    raw = raw.replace(/[“”]/g, '"').replace(/[\r\n]+/g, '').trim();
+
+    // 🧠 Extract only the first JSON array
+    const match = raw.match(/\[[^\]]*\]/s); // simple match for array structure
+    if (!match) {
+      throw new Error('Could not find valid array in model output.');
+    }
+
+    const arrayText = match[0];
+
+    let parsed;
+    try {
+      parsed = JSON.parse(arrayText);
+    } catch (err) {
+      console.error('Failed to parse JSON from model:', err);
+      return NextResponse.json(
+        { error: 'Invalid JSON response from model.' },
+        { status: 500 }
+      );
+    }
+
+    // ✅ Final structure check
+    if (
+      !Array.isArray(parsed) ||
+      parsed.length === 0 ||
+      !parsed[parsed.length - 1].startsWith('Total XP required')
+    ) {
+      return NextResponse.json(
+        { error: 'Malformed result: missing Total XP line.' },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ result: parsed });
+  } catch (err) {
+    console.error('Error in enchantment route:', err);
     return NextResponse.json(
-      { error: 'Failed to generate enchantment order.' },
+      { error: err.message || 'Internal server error' },
       { status: 500 }
     );
   }
