@@ -43,6 +43,13 @@ const Page = ({ name, level, image, rowIndex, incompatible }) => {
                                 ? `bg-[#305c4c]`
                                 : "bg-[#1C4464] hover:bg-blue-950"
                         } transition-all duration-300 ease-in-out border-2 rounded-xl`}
+                        onClick={() =>
+                            handleClick({
+                                rowIndex,
+                                name,
+                                incompatible,
+                            })
+                        }
                     >
                         <div className={`relative `}>
                             <Image
@@ -50,13 +57,6 @@ const Page = ({ name, level, image, rowIndex, incompatible }) => {
                                 height={80}
                                 src={image}
                                 alt={`${name} image here`}
-                                onClick={() =>
-                                    handleClick({
-                                        rowIndex,
-                                        name,
-                                        incompatible,
-                                    })
-                                }
                             />
                             {level && (
                                 <div className="absolute w-8 h-8 flex justify-center items-center -top-3 -right-2 bg-amber-300 rounded-full">
