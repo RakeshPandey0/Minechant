@@ -42,7 +42,7 @@ const Page = ({ name, level, image, rowIndex, incompatible }) => {
                             selected_enchants[rowIndex] === name
                                 ? `bg-[#305c4c]`
                                 : "bg-[#1C4464] hover:bg-blue-950"
-                        } transition-all duration-200 ease-in-out border-2 rounded-xl`}
+                        } transition-all duration-100 ease-in-out border-2 rounded-xl`}
                         onClick={() =>
                             handleClick({
                                 rowIndex,

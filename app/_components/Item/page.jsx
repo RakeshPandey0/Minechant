@@ -34,7 +34,7 @@ const Page = ({ name, level, image }) => {
                             selected_items.includes(name)
                                 ? `bg-[#305c4c]`
                                 : "bg-[#1C4464] hover:bg-blue-950"
-                        } transition-all duration-200 ease-in-out`}
+                        } transition-all duration-100 ease-in-out`}
                     >
                         <div className="relative">
                             <Image
