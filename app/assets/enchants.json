@@ -2,7 +2,7 @@
     {
         "name": "protection",
         "levelMax": 4,
-        "weight": 1,
+        "weight": 10,
         "incompatible": [
             "blast_protection",
             "fire_protection",
@@ -20,9 +20,9 @@
     {
         "name": "bane_of_arthropods",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 5,
         "incompatible": ["smite", "sharpness", "density", "breach"],
-        "items": ["sword", "axe", "mace"]
+        "items": ["sword", "axe", "mace", "spear"]
     },
     {
         "name": "blast_protection",
@@ -38,7 +38,7 @@
     {
         "name": "channeling",
         "levelMax": 1,
-        "weight": 4,
+        "weight": 1,
         "incompatible": ["riptide"],
         "items": ["trident"]
     },
@@ -52,14 +52,14 @@
     {
         "name": "efficiency",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 10,
         "incompatible": [],
         "items": ["pickaxe", "shovel", "axe", "hoe", "shears"]
     },
     {
         "name": "feather_falling",
         "levelMax": 4,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [],
         "items": ["boots"]
     },
@@ -68,12 +68,12 @@
         "levelMax": 2,
         "weight": 2,
         "incompatible": [],
-        "items": ["sword", "mace"]
+        "items": ["sword", "mace", "spear"]
     },
     {
         "name": "fire_protection",
         "levelMax": 4,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [
             "blast_protection",
             "protection",
@@ -112,28 +112,28 @@
     {
         "name": "infinity",
         "levelMax": 1,
-        "weight": 4,
+        "weight": 1,
         "incompatible": ["mending"],
         "items": ["bow"]
     },
     {
         "name": "knockback",
         "levelMax": 2,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [],
-        "items": ["sword"]
+        "items": ["sword", "spear"]
     },
     {
         "name": "looting",
         "levelMax": 3,
         "weight": 2,
         "incompatible": [],
-        "items": ["sword"]
+        "items": ["sword", "spear"]
     },
     {
         "name": "loyalty",
         "levelMax": 3,
-        "weight": 1,
+        "weight": 5,
         "incompatible": ["riptide"],
         "items": ["trident"]
     },
@@ -178,7 +178,8 @@
             "trident",
             "turtle_shell",
             "crossbow",
-            "mace"
+            "mace",
+            "spear"
         ]
     },
     {
@@ -191,21 +192,21 @@
     {
         "name": "piercing",
         "levelMax": 4,
-        "weight": 1,
+        "weight": 10,
         "incompatible": ["multishot"],
         "items": ["crossbow"]
     },
     {
         "name": "power",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 10,
         "incompatible": [],
         "items": ["bow"]
     },
     {
         "name": "projectile_protection",
         "levelMax": 4,
-        "weight": 1,
+        "weight": 5,
         "incompatible": ["protection", "blast_protection", "fire_protection"],
         "items": ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
     },
@@ -219,7 +220,7 @@
     {
         "name": "quick_charge",
         "levelMax": 3,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [],
         "items": ["crossbow"]
     },
@@ -240,33 +241,33 @@
     {
         "name": "sharpness",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 10,
         "incompatible": ["bane_of_arthropods", "smite"],
-        "items": ["sword", "axe"]
+        "items": ["sword", "axe", "spear"]
     },
     {
         "name": "silk_touch",
         "levelMax": 1,
-        "weight": 4,
+        "weight": 1,
         "incompatible": ["fortune"],
         "items": ["pickaxe", "shovel", "axe", "hoe"]
     },
     {
         "name": "smite",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [
             "bane_of_arthropods",
             "sharpness",
             "density",
             "breach"
         ],
-        "items": ["sword", "axe", "mace"]
+        "items": ["sword", "axe", "mace", "spear"]
     },
     {
         "name": "soul_speed",
         "levelMax": 3,
-        "weight": 4,
+        "weight": 1,
         "incompatible": [],
         "items": ["boots"]
     },
@@ -280,21 +281,21 @@
     {
         "name": "swift_sneak",
         "levelMax": 3,
-        "weight": 4,
+        "weight": 1,
         "incompatible": [],
         "items": ["leggings"]
     },
     {
         "name": "thorns",
         "levelMax": 3,
-        "weight": 4,
+        "weight": 1,
         "incompatible": [],
         "items": ["helmet", "chestplate", "leggings", "boots", "turtle_shell"]
     },
     {
         "name": "unbreaking",
         "levelMax": 3,
-        "weight": 1,
+        "weight": 5,
         "incompatible": [],
         "items": [
             "helmet",
@@ -318,13 +319,14 @@
             "trident",
             "turtle_shell",
             "crossbow",
-            "mace"
+            "mace",
+            "spear"
         ]
     },
     {
         "name": "curse_of_binding",
         "levelMax": 1,
-        "weight": 4,
+        "weight": 1,
         "incompatible": [],
         "items": [
             "helmet",
@@ -339,7 +341,7 @@
     {
         "name": "curse_of_vanishing",
         "levelMax": 1,
-        "weight": 4,
+        "weight": 1,
         "incompatible": [],
         "items": [
             "helmet",
@@ -364,13 +366,14 @@
             "trident",
             "turtle_shell",
             "crossbow",
-            "mace"
+            "mace",
+            "spear"
         ]
     },
     {
         "name": "density",
         "levelMax": 5,
-        "weight": 1,
+        "weight": 5,
         "incompatible": ["breach", "smite", "bane_of_arthropods"],
         "items": ["mace"]
     },
@@ -387,5 +390,12 @@
         "weight": 2,
         "incompatible": [],
         "items": ["mace"]
+    },
+    {
+        "name": "lunge",
+        "levelMax": 3,
+        "weight": 1,
+        "incompatible": [],
+        "items": ["spear"]
     }
 ]
