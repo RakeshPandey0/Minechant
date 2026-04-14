@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import enchantments from "@/app/assets/enchants.json";
 import { useDispatch, useSelector } from "react-redux";
 import {
     selectEnchant,
@@ -18,7 +17,7 @@ const Page = ({ name, level, image, rowIndex, incompatible }) => {
                 .map((enchant) => enchant.split(" ")[0]);
 
             const checkList = enchantNameOnly.filter((enchant) =>
-                incompatible.includes(enchant)
+                incompatible.includes(enchant),
             );
 
             selected_enchants.forEach((enchant, index) => {

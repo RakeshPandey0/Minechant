@@ -1,14 +1,13 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchEnchantmentOrder } from "@/app/redux/slices/enchantmentSlice";
+// import { fetchEnchantmentOrder } from "@/app/redux/slices/enchantmentSlice";
+import { fetchEnchantmentOrder } from "../../redux/slices/enchantmentSlice";
 
 const page = () => {
     const dispatch = useDispatch();
     const { selected_items, selected_enchants } = useSelector(
-        (state) => state.selection
+        (state) => state.selection,
     );
-
-    
 
     const isReady = selected_items?.length > 0 && selected_enchants?.length > 0;
 
@@ -18,7 +17,10 @@ const page = () => {
         <button
             onClick={(e) =>
                 dispatch(
-                    fetchEnchantmentOrder({ selected_items, selected_enchants })
+                    fetchEnchantmentOrder({
+                        selected_items,
+                        selected_enchants,
+                    }),
                 )
             }
             tabIndex={0}
